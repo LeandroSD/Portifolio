@@ -1,0 +1,107 @@
+html{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    display: grid;
+    place-items: center;
+    padding: 0;
+    background-color: #A9A9A9;
+    font-family: "Raleway";
+    width: 100%;
+    height: 100%;
+    --s: 200px; /* control the size */
+    --c1: #1d1d1d;
+    --c2: #4e4f51;
+    --c3: #3c3c3c;
+
+    background: repeating-conic-gradient(
+            from 30deg,
+            #0000 0 120deg,
+            var(--c3) 0 180deg
+        )
+        calc(0.5 * var(--s)) calc(0.5 * var(--s) * 0.577),
+        repeating-conic-gradient(
+        from 30deg,
+        var(--c1) 0 60deg,
+        var(--c2) 0 120deg,
+        var(--c3) 0 180deg
+        );
+    background-size: var(--s) calc(var(--s) * 0.577);
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+* {
+    scrollbar-width: none;
+    scrollbar-color: #5e00d8 #4e4f51;
+}
+
+.navbar{
+    width: 100%;
+}
+
+#preguica img{
+    margin-top: 75px;
+    margin-bottom: 75px;
+}
+
+#preguica{
+    width: 100%;
+    text-align: center;
+    
+}
+
+.cards{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.card_experiences,.card_projects {
+    width: 30em;
+    height: 40em;
+    border-radius: 20px;
+    padding: 5px;
+    margin: 0 3em 5em 3em;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+}
+
+.card_projects{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.card__content {
+    background: rgb(5, 6, 45);
+    border-radius: 17px;
+    width: 100%;
+    height: 100%;
+    color: white;
+    padding: 2em;
+}
+
+.card__content h1{
+    padding: 1rem 0;
+    margin: 0;
+}
