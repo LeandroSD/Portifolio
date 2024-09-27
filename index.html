@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/apresentation.css">
+    <link rel="stylesheet" href="css/botoesNav.css">
+    <link rel="stylesheet" href="css/stylesGitProjects.css">
+
+    <link href="https://fonts.cdnfonts.com/css/hamster" rel="stylesheet">
+
+    <title>Portifólio</title>
+</head>
+<body>
+    <!-- Barra de Navegação -->
+    <div class="navbar navbar-expand-lg navbar-inverse">
+        <div class="nome">
+            <p>Leandro Soares Dantas</p>
+        </div>
+
+        <div class="container">
+            <div class="radio-wrapper">
+                <input class="input" name="btn" id="value-1" type="radio">
+                <div class="btn">
+                  <span aria-hidden="">_</span>Experience
+                  <span class="btn__glitch" aria-hidden=""></span>
+                  <label class="number">r1</label>
+                </div>
+            </div>
+            <div class="radio-wrapper">
+                <input class="input" name="btn" id="value-2" checked="true" type="radio">
+                <div class="btn">
+                    Projects<span aria-hidden="">_</span>
+                  <span class="btn__glitch" aria-hidden=""></span>
+                  <label class="number">r2</label>
+                </div>
+            </div>
+            <div class="radio-wrapper">
+                <input class="input" name="btn" id="value-3" type="radio">
+                <div class="btn">
+                    Contact<span aria-hidden=""></span>
+                  <span class="btn__glitch" aria-hidden=""></span>
+                  <label class="number">r3</label>
+                </div> 
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="img"><img src="img/Foto.jpg" alt=""></div>
+        <span>About Me</span>
+        <p class="info">My name is Leandro, and I am a developer focused on Frontend with experience in technologies such as React, TypeScript, and CSS/Sass. I have a solid understanding of API integration and some backend knowledge using Node.js and MongoDB. I’m also constantly improving my skills in code versioning with Git and using tools like Styled Components and Docker. I hold a degree in technology, and I’m a dedicated professional with critical thinking, organizational skills, and a passion for teamwork. I am currently seeking opportunities to apply and further develop my web development skills.</p>
+        <div class="share">
+            <a href="https://github.com/LeandroSD"><i class="bi bi-github"></i></a>
+            <a href="https://www.instagram.com/leandro_s_d/"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/leandro-soares-dantas-525181163/"><i class="bi bi-linkedin"></i></a>
+        </div>
+    </div>
+
+    <div id="preguica">
+        <img src="img/Preguica.gif" alt="">
+    </div>
+
+    <div class="cards">
+        <div class="card_experiences">
+            <div class="card__content">
+                <h1>Experiences</h1>
+                <p>Full Stack Development Intern (PHP)</p>
+                <ul>
+                    <li>I worked as a full stack development intern during my university studies, focusing on PHP. My responsibilities included server maintenance and bug fixing, ensuring the stability and proper functioning of applications. I worked on both the front-end and back-end, enhancing my technical skills in production environments.</li>
+                </ul>
+
+                <p>Academic and Personal Projects</p>
+                <ul>
+                    <li>I developed several projects during my studies using technologies such as Python, JavaScript, React, Vue, and MySQL. I also gained experience with Docker, applying containerization concepts to improve development efficiency. These experiences have provided me with a solid foundation in the main languages and frameworks used in the web development industry.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card_projects">
+            <div class="card__content">
+                <section id="projects">
+                    <h2>My Projects</h2>
+                    <ul id="github-projects"></ul>
+                  </section>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/gitProjects.js"></script>
+
+</body>
+</html>
+
