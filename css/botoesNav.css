@@ -1,3 +1,12 @@
+@media (max-width: 768px) {
+  .radio-wrapper {
+      width: 6em; /* Tornar os botões menores em telas pequenas */
+  }
+  .navbar .container {
+      flex-direction: column; /* Empilhar os botões em telas menores */
+  }
+}
+
 @font-face {
     font-family: 'Glitch Goblin';
     src: url('../fonts/glitch-goblin.ttf') format('truetype');

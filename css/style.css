@@ -1,15 +1,42 @@
+@media (max-width: 768px) {
+    .cards {
+        flex-direction: column; /* Empilha as cartas em telas menores */
+    }
+    .card_experiences, .card_projects {
+        width: 90%; /* Reduzir a largura das cartas */
+        margin: 1em auto; /* Ajustar margens para centralizar em telas menores */
+    }
+}
+
+@media (max-width: 768px) {
+    #preguica img {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        width: 80%; /* Reduzir o tamanho da imagem */
+    }
+}
+
+@media (max-width: 1024px) {
+    .card_experiences, .card_projects {
+        width: 70%; /* Reduzir o tamanho das cartas */
+    }
+}
+
 html{
     margin: 0px;
     padding: 0px;
 }
 body{
-    display: grid;
-    place-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     padding: 0;
     background-color: #A9A9A9;
     font-family: "Raleway";
     width: 100%;
     height: 100%;
+    min-height: 100vh;
     --s: 200px; /* control the size */
     --c1: #1d1d1d;
     --c2: #4e4f51;
@@ -30,26 +57,8 @@ body{
     background-size: var(--s) calc(var(--s) * 0.577);
 }
 
-::-webkit-scrollbar {
-    width: 12px;
-}
-
-::-webkit-scrollbar-track {
-    border-radius: 10px;
-}
-
-::-webkit-scrollbar-thumb {
-    background: #888;
-    border-radius: 10px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: #555;
-}
-
 * {
     scrollbar-width: none;
-    scrollbar-color: #5e00d8 #4e4f51;
 }
 
 .navbar{
@@ -85,6 +94,10 @@ body{
     background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
 }
 
+.card_experiences h3{
+    margin-bottom: 2em;
+}
+
 .card_projects{
     display: flex;
     flex-direction: column;
@@ -105,3 +118,8 @@ body{
     padding: 1rem 0;
     margin: 0;
 }
+
+#carouselControls p{
+    padding: 0 3em;
+}
+
