@@ -1,3 +1,45 @@
+@media (max-width: 768px) {
+  #github-projects li {
+      width: 90%; /* Reduzir a largura em dispositivos móveis */
+      height: auto; /* Deixar a altura automática */
+      margin: 0 auto 10px; /* Centralizar o item */
+      padding: 10px; /* Ajustar o padding */
+  }
+}
+
+@media (max-width: 768px) {
+  #github-projects button {
+      width: 100%; /* Fazer o botão ocupar a largura total */
+      height: auto; /* Ajustar a altura automaticamente */
+      padding: 0.5em 1em; /* Ajustar o padding para telas pequenas */
+      font-size: 1em; /* Ajustar o tamanho da fonte */
+  }
+
+  #github-projects button span {
+      width: auto; /* Ajustar a largura do span dentro do botão */
+      height: auto;
+      font-size: 1em; /* Ajustar o tamanho da fonte do span */
+  }
+}
+
+@media (max-width: 768px) {
+  #projects h2 {
+      font-size: 1.5em; /* Reduzir o tamanho da fonte do título */
+      padding: 0.5rem 0; /* Ajustar o padding */
+  }
+
+  #github-projects {
+      padding: 0 10px; /* Adicionar padding lateral em telas menores */
+  }
+}
+
+.card_projects{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 #projects {
   padding: 0;
 }
@@ -13,25 +55,14 @@
   padding: 0; /* Remove o padding padrão */
 }
 
-#github-projects li {
-  width: 100%;
-  height: 10em;
-  margin: 0 0 15px 0;
-  padding: 15px;
-  border: 2px solid #4b0aff;
-  border-radius: 5px;
-  color: white;
-  transition: box-shadow 0.3s;
-}
+#github-projects .card-body {
+  padding: 0;
 
-/* Efeito de hover para os itens */
-#github-projects li:hover {
-  box-shadow: 0 4px 8px rgba(92, 22, 255, 0.2); /* Sombra ao passar o mouse */
 }
 
 #github-projects button {
   padding: 0.1em 0.25em;
-  width: 13em;
+  width: 90%;
   height: 4.2em;
   background-color: #4b0aff;
   border: 0.08em solid #fff;
@@ -46,11 +77,11 @@
   justify-content: center;
   align-items: center;
   bottom: 0.4em;
-  width: 8.25em;
-  height: 2.5em;
+  min-width: 8.25em;
+  min-height: 2.5em;
   background-color: #00000056;
   border-radius: 0.2em;
-  font-size: 1.5em;
+  font-size: 0.9em;
   color: #fff;
   border: 0.08em solid #fff;
   box-shadow: 0 0.4em 0.1em 0.019em #fff;
