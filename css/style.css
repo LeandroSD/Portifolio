@@ -4,19 +4,16 @@
     }
     .card_experiences, .card_projects {
         width: 90%; /* Reduzir a largura das cartas */
+        height: 90%;
         margin: 1em auto; /* Ajustar margens para centralizar em telas menores */
     }
-}
 
-@media (max-width: 768px) {
     #preguica img {
         margin-top: 30px;
         margin-bottom: 30px;
         width: 80%; /* Reduzir o tamanho da imagem */
     }
-}
 
-@media (max-width: 1024px) {
     .card_experiences, .card_projects {
         width: 70%; /* Reduzir o tamanho das cartas */
     }
@@ -73,25 +70,32 @@ body{
 #preguica{
     width: 100%;
     text-align: center;
-    
 }
 
 .cards{
-    width: 100%;
+    width: 800px;
     height: 100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
+    align-items: center ;
 }
 
 .card_experiences,.card_projects {
-    width: 30em;
-    height: 40em;
+    width: 100%;
+    height: 100%;
     border-radius: 20px;
     padding: 5px;
     margin: 0 3em 5em 3em;
     box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
     background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+}
+
+.card_experiences{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
 }
 
 .card_experiences h3{
@@ -120,6 +124,9 @@ body{
 }
 
 #carouselControls p{
-    padding: 0 3em;
+    padding: 0 0 0 5em;
+    width: 90%;
+    height: 200px;
+
 }
 

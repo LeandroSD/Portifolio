@@ -36,3 +36,11 @@ async function fetchGitHubProjects() {
 
 // Chama a função para carregar os projetos
 fetchGitHubProjects();
+
+function redirectToLinkedIn() {
+  window.location.href = 'https://www.linkedin.com/in/leandro-soares-dantas-525181163/';
+}
+
+function redirectToSection() {
+  window.location.href = '#cards';
+}
