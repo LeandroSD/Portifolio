@@ -1,6 +1,6 @@
 @media (max-width: 768px) {
     .cards {
-        flex-direction: column; /* Empilha as cartas em telas menores */
+        width: 80% !important;
     }
     .card_experiences, .card_projects {
         width: 90%; /* Reduzir a largura das cartas */
@@ -14,9 +14,15 @@
         width: 80%; /* Reduzir o tamanho da imagem */
     }
 
-    .card_experiences, .card_projects {
-        width: 70%; /* Reduzir o tamanho das cartas */
+    #carouselControls p {
+        padding: 0 0 0 2em !important;
+        height: 100% !important;
     }
+
+    .card__content{
+        height: 450px !important;
+    }
+
 }
 
 html{
@@ -123,7 +129,7 @@ body{
     margin: 0;
 }
 
-#carouselControls p{
+#pExperience1, #pExperience2{
     padding: 0 0 0 5em;
     width: 90%;
     height: 200px;
