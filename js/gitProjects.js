@@ -44,3 +44,20 @@ function redirectToLinkedIn() {
 function redirectToSection() {
   window.location.href = '#cards';
 }
+
+function adjustText() {
+  const paragraph1 = document.getElementById("pExperience1");
+  const paragraph2 = document.getElementById("pExperience2");
+  if (window.innerWidth <= 768) {
+    paragraph1.innerText = "I worked as a full stack development intern during my university studies, focusing on PHP.";
+
+    paragraph2.innerText = "I developed several projects during my studies using technologies such as Python, JavaScript, React, Vue, and MySQL."
+  } else {
+    paragraph1.innerText = "I worked as a full stack development intern during my university studies, focusing on PHP. My responsibilities included server maintenance and bug fixing, ensuring the stability and proper functioning of applications. I worked on both the front-end and back-end, enhancing my technical skills in production environments.";
+
+    paragraph2.innerText = "I developed several projects during my studies using technologies such as Python, JavaScript, React, Vue, and MySQL. I also gained experience with Docker, applying containerization concepts to improve development efficiency. These experiences have provided me with a solid foundation in the main languages and frameworks used in the web development industry."
+  }
+}
+
+window.addEventListener("resize", adjustText);
+window.addEventListener("load", adjustText);
